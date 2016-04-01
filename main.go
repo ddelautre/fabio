@@ -15,7 +15,7 @@ import (
 	"github.com/eBay/fabio/metrics"
 	"github.com/eBay/fabio/proxy"
 	"github.com/eBay/fabio/registry"
-	"github.com/eBay/fabio/registry/consul"
+	"github.com/ddelautre/fabio/registry/consul"
 	"github.com/eBay/fabio/registry/file"
 	"github.com/eBay/fabio/registry/static"
 	"github.com/eBay/fabio/route"
