@@ -79,7 +79,7 @@ func serviceConfig(client *api.Client, name string, passing map[string]bool, tag
 
 		for _, tag := range svc.ServiceTags {
 			if host, path, ok := parseURLPrefixTag(tag, tagPrefix); ok {
-				name, addr, port := svc.ServiceName, svc.ServiceAddress, svc.ServicePort
+				name, addr, port := svc.ServiceName, svc.Address, svc.ServicePort
 				if runtime.GOOS == "darwin" && !strings.Contains(addr, ".") {
 					addr += ".local"
 				}
